@@ -1,1 +1,0 @@
-Repositório de projetos do curso de Full-Stack.
