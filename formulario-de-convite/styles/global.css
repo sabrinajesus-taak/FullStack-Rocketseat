@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    background-color: var(--shape-background);
+}
+
+body{
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    padding: 20px;
+    gap: 20px;
+    background-color: var(--shape-body);
+}
+
+aside {
+  height: calc(100vh - 40px);
+  flex-shrink: 0;
+}
+
+.formulario {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  height: calc(100vh - 40px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: var(--shape-body);
+  border-radius: 12px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge antigo */
+}
+
+.formulario::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Edge */
+}
+
+:root{
+    --font-leckerli: "Leckerli One", cursive;
+    --font-baloo: "Baloo 2", sans-serif;
+    --font-openSan: "Open Sans", sans-serif;
+
+    --text-logo: 40px var(--font-leckerli);
+    --heading-md: bold 28px var(--font-baloo);
+    --heading-sm: bold 18px var(--font-baloo);
+    --body-md: 16px var(--font-openSan);
+    --body-sm: 14px var(--font-openSan);
+    --body-xs: 12px var(--font-openSan);
+
+    --brand-light: #59B2FF;
+    --brand-mid: #3487CF;
+    --brand-dark: #1D6FB6;
+    --danger: #FF5959;
+    --input-base: #1C1F21;
+    --input-stroke: #363B40;
+    --input-placeholder: #869198;
+    --shape-background: #131516;
+    --shape-body: #212427;
+    --shape-button: #2D3136;
+    --shape-hover: #383D42;
+    --text-body: #C8CDD0;
+    --text-heading: #F9F9F9;
+}
+
+.text-logo{
+    font: var(--text-logo);
+    color: #FF598B;
+}
+
+.font-header-28{
+    font: var(--heading-md);
+    color: var(--text-heading);
+}
+
+.font-header-18{
+    font: var(--heading-sm);
+    color: var(--text-heading);
+}
+
+.font-body-md{
+    font: var(--body-md);
+    color: var(--text-heading);
+}
+
+.font-body-md-placeholder{
+    font: var(--body-md);
+    color: var(--input-placeholder);
+}
+
+.font-body-sm{
+    font: var(--body-sm);
+    color: var(--text-body);
+}
+
+.font-body-sm-brand{
+    font: var(--body-sm);
+    color: var(--brand-light);
+}
+
+.font-body-sm-heading{
+    font: var(--body-sm);
+    color: var(--text-heading);
+}
+
+.gap-16{
+    gap: 16px;
+}
+
+.gap-12{
+    gap: 12px;
+}
+
+.title{
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.display-flex{
+    display: flex;
+    justify-items: center;
+}
+
+.center{
+    text-align: center;
+    justify-items: center;
+}

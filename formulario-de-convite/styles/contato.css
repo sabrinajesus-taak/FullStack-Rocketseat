@@ -1,0 +1,70 @@
+#contato{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 40px;
+    padding-bottom: 48px;
+}
+
+/* Esconde o checkbox original */
+.opcao input{
+    display: none;
+}
+
+/* Cada linha */
+.opcao{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+/* Caixinha */
+.check{
+    width: 24px;
+    height: 24px;
+
+    border: 2px solid #5a5564;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .3s;
+    flex-shrink: 0;
+}
+
+/* Esconde o ícone */
+.check img{
+    display: none;
+}
+
+/* Quando marcar */
+.opcao input:checked + .check{
+    border-color: #59A8FF;
+}
+
+/* Mostra o check */
+.opcao input:checked + .check img{
+    display: block;
+}
+
+.button{
+    background-color: var(--brand-light);
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px;
+    margin-left: auto;
+}
+
+.button-direction{
+    display: flex;
+}

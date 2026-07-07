@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Convite</title>
+
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <aside>
+      <div class="aside-container">
+        <img src="assets/icons/Logo.svg" alt="Logo de festa" />
+        <h1 class="text-logo">Festive</h1>
+        <p class="font-body-md">Crie um convite digital para o seu evento</p>
+      </div>
+    </aside>
+
+    <main class="formulario">
+      <h1 class="font-header-28 title">Crie seu convite</h1>
+
+      <section class="evento">
+        <div id="sobre-evento" class="gap-12">
+          <img src="assets/icons/calendar.svg" alt="ícone de calendário" />
+          <h2 class="font-header-18">Sobre o evento</h2>
+        </div>
+
+        <div class="grid-evento">
+          <div class="campo campo-title">
+            <label for="title" class="font-body-sm">Título</label>
+            <input
+              id="title"
+              name="title"
+              type="text"
+              placeholder="Nome do evento"
+            />
+          </div>
+
+          <div class="campo campo-beginning">
+            <label for="beginning" class="font-body-sm">Início</label>
+            <input id="beginning" name="beginning" type="date" />
+          </div>
+
+          <div class="campo campo-end">
+            <label for="end" class="font-body-sm">Fim</label>
+            <input id="end" name="end" type="date" />
+          </div>
+
+          <div class="campo campo-type">
+            <label for="type" class="font-body-sm">Tipo</label>
+            <div class="opcoes">
+              <input type="radio" id="presencial" name="tipo" checked />
+              <label for="presencial" class="font-body-sm">
+                <img src="assets/icons/building-2.svg" alt="ícone de empresa" />
+                Presencial
+              </label>
+
+              <input type="radio" id="online" name="tipo" />
+              <label for="online" class="font-body-sm">
+                <img src="assets/icons/video.svg" alt="ícone de camera" />
+                Online
+              </label>
+            </div>
+          </div>
+
+          <div class="campo campo-place">
+            <label for="place" class="font-body-sm">Local</label>
+            <input
+              id="place"
+              name="place"
+              type="text"
+              placeholder="Link ou endereço"
+            />
+          </div>
+
+          <div class="campo campo-description">
+            <label for="description" class="font-body-sm">Descrição</label>
+            <input
+              id="description"
+              name="description"
+              type="text"
+              placeholder="Escreva sobre os detalhes do evento"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="personalizacao">
+        <div id="title-personalizacao" class="gap-12 display-flex">
+          <img
+            src="assets/icons/paintbrush-vertical.svg"
+            alt="ícone de pincel"
+          />
+          <h2 class="font-header-18">Personalização</h2>
+        </div>
+
+        <div>
+          <div class="colors">
+            <label for="colors" class="font-body-sm cor-principal"
+              >Cor principal</label
+            >
+            <div class="color-selection">
+              <label class="color-option">
+                <input type="radio" name="color" />
+                <span id="brand" class="color"></span>
+              </label>
+
+              <label class="color-option">
+                <input type="radio" name="color" />
+                <span id="navy" class="color"></span>
+              </label>
+
+              <label class="color-option">
+                <input type="radio" name="color" />
+                <span id="purple" class="color"></span>
+              </label>
+
+              <label class="color-option">
+                <input type="radio" name="color" />
+                <span id="fuschia" class="color"></span>
+              </label>
+
+              <label class="color-option">
+                <input type="radio" name="color" />
+                <span id="pink" class="color"></span>
+              </label>
+
+              <label class="color-option">
+                <input type="radio" name="color" />
+                <span id="danger" class="color"></span>
+              </label>
+
+              <label class="color-option">
+                <input type="radio" name="color" />
+                <span id="orange" class="color"></span>
+              </label>
+
+              <label class="color-option">
+                <input type="radio" name="color" />
+                <span id="yellow" class="color"></span>
+              </label>
+
+              <label class="color-option">
+                <input type="radio" name="color" />
+                <span id="lime" class="color"></span>
+              </label>
+
+              <label class="color-option">
+                <input type="radio" name="color" />
+                <span id="gren" class="color"></span>
+              </label>
+
+              <label class="color-option">
+                <input type="radio" name="color" />
+                <span id="cyan" class="color"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="font-body-sm cor-principal">Tema do evento</p>
+          <div class="items">
+            <label class="item-selection">
+              <input type="radio" name="theme" class="display-none" />
+              <div class="card">
+                <img
+                  src="assets/img/Image (6).png"
+                  alt="imagem de bolo de aniversário"
+                />
+                <span class="font-body-sm center">Aniversário</span>
+              </div>
+            </label>
+
+            <label class="item-selection">
+              <input type="radio" name="theme" class="display-none" />
+              <div class="card">
+                <img
+                  src="assets/img/Image (7).png"
+                  alt="imagem de bolo de aniversário"
+                />
+                <span class="font-body-sm center">Infantil</span>
+              </div>
+            </label>
+
+            <label class="item-selection">
+              <input type="radio" name="theme" class="display-none" />
+              <div class="card">
+                <img
+                  src="assets/img/Image (8).png"
+                  alt="imagem de bolo de aniversário"
+                />
+                <span class="font-body-sm center">Formatura</span>
+              </div>
+            </label>
+
+            <label class="item-selection">
+              <input type="radio" name="theme" class="display-none" />
+              <div class="card">
+                <img
+                  src="assets/img/Image (9).png"
+                  alt="imagem de bolo de aniversário"
+                />
+                <span class="font-body-sm center">Casamento</span>
+              </div>
+            </label>
+
+            <label class="item-selection">
+              <input type="radio" name="theme" class="display-none" />
+              <div class="card">
+                <img
+                  src="assets/img/Image (10).png"
+                  alt="imagem de bolo de aniversário"
+                />
+                <span class="font-body-sm center">Chá de bebê</span>
+              </div>
+            </label>
+
+            <label class="item-selection">
+              <input type="radio" name="theme" class="display-none" />
+              <div class="card">
+                <img
+                  src="assets/img/Image (11).png"
+                  alt="imagem de bolo de aniversário"
+                />
+                <span class="font-body-sm center">Chá de panela</span>
+              </div>
+            </label>
+
+            <label class="item-selection">
+              <input type="radio" name="theme" class="display-none" />
+              <div class="card">
+                <img
+                  src="assets/img/Image (12).png"
+                  alt="imagem de bolo de aniversário"
+                />
+                <span class="font-body-sm center">Carnaval</span>
+              </div>
+            </label>
+
+            <label class="item-selection">
+              <input type="radio" name="theme" class="display-none" />
+              <div class="card">
+                <img
+                  src="assets/img/Image (13).png"
+                  alt="imagem de bolo de aniversário"
+                />
+                <span class="font-body-sm center">Páscoa</span>
+              </div>
+            </label>
+
+            <label class="item-selection">
+              <input type="radio" name="theme" class="display-none" />
+              <div class="card">
+                <img
+                  src="assets/img/Image (14).png"
+                  alt="imagem de bolo de aniversário"
+                />
+                <span class="font-body-sm center">São João</span>
+              </div>
+            </label>
+
+            <label class="item-selection">
+              <input type="radio" name="theme" class="display-none" />
+              <div class="card">
+                <img
+                  src="assets/img/Image (15).png"
+                  alt="imagem de bolo de aniversário"
+                />
+                <span class="font-body-sm center">Halloween</span>
+              </div>
+            </label>
+
+            <label class="item-selection">
+              <input type="radio" name="theme" class="display-none" />
+              <div class="card">
+                <img
+                  src="assets/img/Image (16).png"
+                  alt="imagem de bolo de aniversário"
+                />
+                <span class="font-body-sm center">Natal</span>
+              </div>
+            </label>
+
+            <label class="item-selection">
+              <input type="radio" name="theme" class="display-none" />
+              <div class="card">
+                <img
+                  src="assets/img/Image (17).png"
+                  alt="imagem de bolo de aniversário"
+                />
+                <span class="font-body-sm center">Outro</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="linha">
+          <div class="campo">
+            <label class="font-body-sm">Estilo</label>
+
+            <div class="estilo">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+
+              <span class="escuro font-body-sm-heading">Escuro</span>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label class="font-body-sm">Foto de capa</label>
+
+            <input type="file" id="capa" />
+            <div class="upload-group">
+              <label for="capa" class="upload">
+                <img src="assets/icons/upload.svg" alt="" />
+                <span class="font-body-sm-heading">Selecionar</span>
+              </label>
+
+              <span class="font-body-md-placeholder">
+                Nenhum arquivo selecionado
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
+        <div id="sobre-evento" class="gap-12 contato">
+          <img src="assets/icons/contact.svg" alt="ícone de contato" />
+          <h2 class="font-header-18">Dados para contato</h2>
+        </div>
+
+        <div class="grid-evento border">
+          <div class="campo campo-title">
+            <label for="title" class="font-body-sm">Nome</label>
+            <input
+              id="title"
+              name="title"
+              type="text"
+              placeholder="Nome completo"
+            />
+          </div>
+
+          <div class="campo campo-beginning">
+            <label for="beginning" class="font-body-sm">E-mail</label>
+            <input
+              id="beginning"
+              name="beginning"
+              type="email"
+              placeholder="exemplo@email.com"
+            />
+          </div>
+
+          <div class="campo campo-end">
+            <label for="end" class="font-body-sm">Telefone</label>
+            <input
+              id="end"
+              name="end"
+              type="tel"
+              placeholder="(99) 99999-9999"
+            />
+          </div>
+        </div>
+
+        <div class="checkbox">
+          <label class="opcao" for="termos">
+            <input type="checkbox" id="termos" />
+
+            <span class="check">
+              <img src="assets/icons/check.svg" alt="" />
+            </span>
+
+            <span class="font-body-sm">
+              Li e concordo com os <a href="#" class="font-body-sm-brand">Termos e Condições</a> e com a
+              <a href="#" class="font-body-sm-brand">Política de Privacidade</a>
+            </span>
+          </label>
+
+          <label class="opcao" for="email">
+            <input type="checkbox" id="email" />
+
+            <span class="check">
+              <img src="assets/icons/check.svg" alt="" />
+            </span>
+
+            <span class="font-body-sm"> Aceito receber atualizações e promoções por e-mail </span>
+          </label>
+
+          <label class="opcao" for="sms">
+            <input type="checkbox" id="sms" />
+
+            <span class="check">
+              <img src="assets/icons/check.svg" alt="" />
+            </span>
+
+            <span class="font-body-sm"> Aceito receber atualizações e promoções por SMS </span>
+          </label>
+        </div>
+
+        <div class="button-direction">
+          <button class="button font-body-md">
+            <img src="assets/icons/ticket.svg" alt="ícone de ticket">
+            Gerar Convite</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
